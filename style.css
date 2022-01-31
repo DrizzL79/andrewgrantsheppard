@@ -1,8 +1,8 @@
 body {
     background: #e9e9e9;
-    background-image: url('l4 tree in park five trees in abstract smaller.jpg');
+    background-image: url('l4 tree in park five trees in abstract smaller.jpg' opacity:0.25);
     background-size: cover;
-    opacity: 0.25;
+    opacity: 1;
     padding: 100px;
     font-family: 'Open Sans', sans-serif;
     color: #000;
@@ -12,12 +12,13 @@ body {
     background-repeat: no-repeat;
 }
 h1 {
-    grid-row-start: 1;
+    grid-row-start: 0;
     grid-column-start: 1;
-    grid-column-end: 3;
+    grid-column-end: 4;
     color: rgb(104, 85, 57);
     font-size: 48pt;
     font-family: 'Martel', serif;
+    text-align: justify;
   
     background-image: linear-gradient(120deg, rgb(30,77,53) 0%, rgb(245, 233, 149) 50%, rgb(28, 33, 104) 10%);
     background-repeat: no-repeat;
@@ -25,10 +26,24 @@ h1 {
     background-position: 0 100%;
     transition: background-size 0.25s ease-in;        
 }
-
+h2 {
+    grid-row-start:2;
+    grid-column-start: 0;
+    grid-column-end: 3;
+    grid-row-end: 3;
+    text-align: center;
+    font-family: 'Bitter', sans-serif;
+    font-size: 32px;
+}
+p {
+   grid-row-start:2;
+   grid-column-start: 2;
+   grid-column-end: 4;
+   text-align: justify;
+}
 img {
-    grid-row-start: 2;
-    grid-column-start: 1;
+    grid-row-start: 3;
+    grid-column-start: -1;
     max-width: 200px;
     max-height: 200px;
     border-radius: 10px;
@@ -38,8 +53,8 @@ img {
 
 ul {
     list-style-type: none;
-    grid-row-start: 2;
-    grid-column-start: 2;
+    grid-row-start: 4;
+    grid-column-start: 1;
     width: 200px;
     font-size: 14pt;
 } 
