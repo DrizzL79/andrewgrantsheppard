@@ -1,113 +1,98 @@
 body {
-    background: #e9e9e9;
-    background-image: url('l4 tree in park five trees in abstract smaller.jpg');
-    background-size: cover;
-    opacity: 1;
-    padding: 100px;
-    font-family: 'Open Sans', sans-serif;
-    color: #000;
-    display: grid;
-    align-items: center;
-    grid-template-columns: 300px auto;
-    background-repeat: no-repeat;
+    margin: 5px 5px 5px 5px;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    color: rgb(255 255 255);
 }
+
 h1 {
-    grid-row-start: 0;
-    grid-column-start: 1;
-    grid-column-end: 4;
-    color: rgb(104, 85, 57);
-    font-size: 48pt;
-    font-family: 'Martel', serif;
-    text-align: justify;
-  
-    background-image: linear-gradient(120deg, rgb(30,77,53) 0%, rgb(245, 233, 149) 50%, rgb(28, 33, 104) 10%);
-    background-repeat: no-repeat;
-    background-size: 100% 0.2em;
-    background-position: 0 100%;
-    background-color:bisque;
-    transition: background-size 0.25s ease-in;        
-}
-h2 {
-    grid-row-start:2;
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-end: 3;
+    color: rgb(23, 123, 140);
+    font-family: 'Artifika', serif, system-ui;
     text-align: center;
-    font-family: 'Bitter', sans-serif;
-    font-size: 32px;
-    width: 400px;
-    padding: 0px 0px 0px 0px;
-    margin:: 0px 0px 0px 0px;
-    background-color:crimson;
 }
-p {
-   grid-row-start: 3;
-   grid-column-start: 1;
-   grid-column-end: auto;
-   grid-row-end: auto;
-   text-align: justify;
-   width:400px;
-   margin-right:20px;
-   background-color:azure;
+
+div.about{
+    position: static;
+    font-family: 'Artifika', serif;
+    float: left;
+    padding: 1em 1em 1em 2em;
+    margin: 1em 1em 1em 1em;
 }
+
+h2.about {
+    font-family: 'Ledger', serif;
+    background-color: #0F0f39;
+    position: relative;
+    text-align: center;
+    color: darkslategray;
+    font-size: 2em;
+    border-radius: 5px;
+    margin: 1em 0em 1em 0em;
+}
+
+p.about {
+   position: relative;
+   text-align: left;
+   font-family: 'Ledger', serif, system-ui;
+   font-size: 22px;
+   width: 346px;
+   background-color: darkslategray;
+   border-radius: 65px 20px 20px 20px;
+   margin: 0px 5px 0px 16px;
+   padding: 6px 13px 12px 10px;
+   color: #0f0f39;
+}
+
 img {
-    align-items:center;
-    max-width: 200px;
-    max-height: 200px;
-    border-radius: 10px;
-    box-shadow: 1px 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    margin: 10px;
-    padding-bottom: 40px;
-
+    position: relative;
+    width: 140px;
+    padding: 0px 5px 0px 5px;
+    float: inherit;
+    z-index: 2;
+    border-radius: 50%;
 }
 
-ul {
-    list-style-type: none;
-    grid-row-start: 4;
-    grid-column-start: 1;
-    width: 300px;
-    font-size: 14pt;
-} 
+div.lsites {
+    padding: 5px 0px 5px 2px;
+    margin: 65px 20px;
+    float: right;
+}
 
-ul:before {
-    content: 'Learning Sites';
-    font-family: 'Bitter', sans-serif;
-    color: rgb(0 0 0);
-    background-color: crimson;
-    font-size: 32px;
-    height:inherit;
-    padding-top: 0px;
-    margin: 0px;
-    font-weight:bold;
+h3.lsites {
+    font-family: 'Ledger', serif, system-ui;
+    color: darkseagreen;
+    font-weight: 500;
+    text-align: center;
+    font-size: 30px;
+    margin: 10px 0px 10px;
+    padding: 5px 40px 10px 0px;
+}
+
+ul.lsites {
+    list-style-type: square;
+    color: darkblue;
+    font-size: 18px;
+    font-family: 'Artifika', serif, system-ui;
+    padding: 5px 5px 5px 5px;
+    margin: 15px 5px 5px 25px;
 }
 
 li {
-    padding: 10px 15px 5px 10ox;
-    margin: 15px 10px 0px 1px;
+    margin: 0px 5px 5px 0px;
+    padding: 5px 0px 5px 5px;
+    position: relative;
 }
 
 a {
-    color: rgb(46 8 113);
-    display: inline-block;
-    background-color:aliceblue;
-    overflow: hidden;
-    position: relative;
+    font-family: 'Fresca', serif, system-ui;
     text-decoration: none;
-    vertical-align: bottom;
-  }
-  a:after {
-    background: linear-gradient(to bottom, rgb(245, 233, 149), rgb(245, 233, 149)) center 1.08em/100% 2px no-repeat;
-    content: "";
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 400%;
-    will-change: transform;
-    z-index: -1;
-  }
-  a:hover:after {
-    -webkit-animation: underline-gradient 6s linear infinite;
-            animation: underline-gradient 6s linear infinite;
-    background-image: linear-gradient(90deg, rgba(122, 95, 255, 0.8) 15%, rgba(1, 255, 137, 0.6) 35%, rgba(122, 95, 255, 0.8) 85%);
-  }
+    color: darkmagenta;
+}
+
+a:hover {
+    color: #fff;
+    left: 15px;
+    bottom: 10px;
+    position: relative;
+}
