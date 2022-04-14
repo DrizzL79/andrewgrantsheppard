@@ -1,133 +1,161 @@
-nav, article, aside, footer {
-  background-color: #1a1f3a;
-  display: flex;
-  flex: 1 2 auto;
-}
+ /* fonts */
 
-nav {
-height: 100px;
-flex: 1 2 auto;
-align-items: center;
-align-content: space-around;
-margin: auto;
-}
-
-nav ul {
-list-style-type: none;
-flex: 1 1 auto;
-display: flex;
-margin: auto;
-padding: 1em;  
-}
-
-nav li {
-display: flex;
-text-align: center;
-flex: auto;
-}
-
-nav a {
-display: block;
-font-size: 1.2em;
-text-transform: uppercase;
-text-decoration: none;
-color: rgb(255, 255, 255);
-padding: 1px 1px 0 0;
-margin: 5px 2px 0 2px;
-}
-
-nav a:last-child{
-padding: 1em;
-margin: auto;
-}
-
-/* || main layout */
-
-html, body {
-margin: auto;
-padding: 1em;
-}
-
-html {
-display: flex;
-flex: 1 1;
-font-size: 10px;
-background-color: #223246;
-}
-
-body {
-display: -ms-grid;
-display: grid;
-flex: 1 1;
-max-width: 100%;
-}
-
-
-h1, h2, h3 {
-font-family: Rockwell, serif;
-color: #056f9f;
-}
-
-p, input, li {
-  font-family: Ledger, sans;
-  color: #afafaf;
-}
-
-h1 {
-font-size: 4rem;
-font-family: 'Book Antiqua', cursive, sans;
-text-align: center;
-color: #858585;
-text-shadow: 7px 7px 22px  royalblue;
-}
-
-h2 {
-font-size: 3rem;
-font-family: Rockwell, sans;
-text-align: center;
-}
-
-h3 {
-font-size: 2.2rem;
-font-family: 'Fresca', sans;
-}
-
-p, li {
-font-size: 1.9rem;
-line-height: 1.5;
-font-family: "Bookman Old Style", sans;    
-}
-
-div nav {
-display: flex;
-flex: 1 200px;
-flex-flow: row wrap;
-background-color: #1a1f3a;
-justify-content: space-around;
-}
-
-div nav:nth-of-type(5){
-padding: 2em 5em 5em 1em;
-margin: 2em 4em;
-}
-
-main {
-  display: flex;
-  flex: 1 1;
-  background-color: rgb(14, 55, 82); 
-  width: auto;
-}
-
- 
-img {
-flex: 1 1 auto;
-max-width: 30%;
-max-height: 30%;
-padding: 2em;
-margin: auto;
-}
-
-footer {
-  margin-top: auto;
-  padding: 2em;
-}
+ @font-face {
+    font-family: 'Artifika';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/artifika/v18/VEMyRoxzronptCuxu5Wq7DE.woff2) format('woff2');
+  } 
+  
+  @font-face {
+    font-family: 'Cinzel Decorative';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/cinzeldecorative/v12/daaCSScvJGqLYhG8nNt8KPPswUAPni7TTMw.woff2) format('woff2');
+  }
+  
+  /* basics */
+  
+  html, body {
+    margin: auto;
+    padding: 1em;
+  }
+    
+  html {
+    display: flex;
+    flex: 1 1;
+    font-size: 10px;
+    background-color: #223246;
+  }
+    
+  body {
+    display: -ms-grid;
+    display: grid;
+    flex: 1 1;
+    max-width: 100%;
+  }
+  
+  p {
+    color: #858585;
+    font-family: Artifika, Arial, Helvetica, sans-serif;
+    font-size: 1.9rem;
+    line-height: 1.5;
+    margin: auto;
+    padding: 10px 5px 10px 25px;
+  }
+    
+    
+  h1 {
+    font-size: 4rem;
+    font-family: Artifika, Arial, Helvetica, sans-serif;
+    text-align: center;
+    color: #858585;
+    text-shadow: 7px 7px 22px  royalblue;
+  }
+    
+  h2 {
+    font-size: 3rem;
+    font-family: 'Cinzel Decorative', Arial, Helvetica, sans-serif;
+    text-align: center;
+  }
+  
+  
+    
+  
+  /* navigation */
+  
+  nav {
+    background-color: #1a1f3a;
+    display: flex;
+    flex: 1 2 auto;
+    width: 100%;
+    align-items: center;
+    align-content: space-around;
+    margin: auto;
+  }
+  
+  nav ul, nav li {
+    list-style-type: none;
+    flex: 1 1 auto;
+    display: flex;
+    margin: auto;
+    padding: 1em;  
+    text-align: center;
+    font-size: 1.9rem;
+    line-height: 1.5;
+  }
+  
+  nav a {
+    display: block;
+    font-size: 1.2em;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #9dd9ff;
+    padding: 1px 1px 0 0;
+    margin: 5px 2px 0 2px;
+  }
+    
+  div nav {
+    display: flex;
+    flex: 1 200px;
+    flex-flow: row wrap;
+    background-color: #1a1f3a;
+    justify-content: space-around;
+  }
+    
+   /* main layout */
+  
+  main {
+    display: inline-block;
+    flex: 1 1;
+    background-color: rgb(14, 55, 82); 
+    width: auto;
+  }
+     
+  img {
+    flex: 1 1 auto;
+    max-width: 30%;
+    max-height: 30%;
+    padding: 2em;
+    margin: auto;
+  }
+  
+  aside ul {
+    font-family: "Modern No. 20", Arial, Helvetica, sans-serif;
+    list-style-type: none;
+    font-size: 2em;
+    line-height: 2em;
+    flex: 1 1 auto;
+    text-align: center;
+    margin: auto;
+    padding: 1.25em;
+  }
+  
+  aside a{
+    color: rgb(198, 61, 61);
+  }
+  
+  aside a:hover{
+    position: relative;
+    bottom: 10px;
+    right: 10px;
+    color: white;
+  }
+  
+  aside a:active{
+    color: crimson;
+  }
+  
+  aside a:after{
+    color: lime;
+  }
+  
+  footer, footer p {
+    padding: 10px 5px 10px 5px;
+    background-color: #1a1f3a;
+    color: #9dd9ff;
+    display: flex;
+    flex: 1 2 auto;
+  }
