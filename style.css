@@ -1,98 +1,167 @@
+ /* fonts */
+
+ @font-face {
+  font-family: 'Artifika';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/artifika/v18/VEMyRoxzronptCuxu5Wq7DE.woff2) format('woff2');
+} 
+
+@font-face {
+  font-family: 'Cinzel Decorative';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/cinzeldecorative/v12/daaCSScvJGqLYhG8nNt8KPPswUAPni7TTMw.woff2) format('woff2');
+}
+
+/* basics */
+
+html, body {
+  margin: auto;
+  padding: 1em;
+}
+  
+html {
+  display: flex;
+  flex: 1 1 auto;
+  font-size: 10px;
+  background-color: #223246;
+}
+  
 body {
-    margin: 5px 5px 5px 5px;
-    width: 100%;
-    height: 100%;
-    background-color: black;
-    color: rgb(255 255 255);
+  display: -ms-grid;
+  display: grid;
+  flex: 1 1;
+  max-width: 100%;
 }
 
+p {
+  font-family: Artifika, Arial, Helvetica, sans-serif;
+  display: flex;
+  flex: row wrap;
+  color: #858585; 
+  font-size: 1.9rem;
+  line-height: 1.5;
+  margin: auto;
+}
+ 
+div p{
+  margin: 1em 3em 3em 1em;
+}
+  
 h1 {
-    color: rgb(23, 123, 140);
-    font-family: 'Artifika', serif, system-ui;
-    text-align: center;
+  font-size: 4rem;
+  font-family: Artifika, Arial, Helvetica, sans-serif;
+  text-align: center;
+  color: #858585;
+  text-shadow: 7px 7px 22px  royalblue;
+}
+  
+h2 {
+  font-size: 2.8rem;
+  font-family: 'Cinzel Decorative', Arial, Helvetica, sans-serif;
+  text-align: center;
+  text-shadow: 7px 7px 22px;
 }
 
-div.about{
-    position: static;
-    font-family: 'Artifika', serif;
-    float: left;
-    padding: 1em 1em 1em 2em;
-    margin: 1em 1em 1em 1em;
+
+  
+
+/* navigation */
+
+nav {
+  background-color: #1a1f3a;
+  display: flex;
+  flex: 1 2 auto;
+  
+  align-items: center;
+  align-content: space-around;
+  margin: auto;
 }
 
-h2.about {
-    font-family: 'Ledger', serif;
-    background-color: #0F0f39;
-    position: relative;
-    text-align: center;
-    color: darkslategray;
-    font-size: 2em;
-    border-radius: 5px;
-    margin: 1em 0em 1em 0em;
+nav ul, nav li {
+  list-style-type: none;
+  flex: 1 1 auto;
+  display: flex;
+  margin: auto;
+  padding: 1em;  
+  text-align: center;
+  font-size: 1.9rem;
+  line-height: 1.5;
 }
 
-p.about {
-   position: relative;
-   text-align: left;
-   font-family: 'Ledger', serif, system-ui;
-   font-size: 22px;
-   width: 346px;
-   background-color: darkslategray;
-   border-radius: 65px 20px 20px 20px;
-   margin: 0px 5px 0px 16px;
-   padding: 6px 13px 12px 10px;
-   color: #0f0f39;
+nav a {
+  display: block;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #9dd9ff;
+  padding: 1px 1px 0 0;
+  margin: 5px 2px 0 2px;
 }
+  
+div nav {
+  display: flex;
+  flex: 1 200px;
+  flex-flow: row wrap;
+  background-color: #1a1f3a;
+  justify-content: space-around;
+}
+  
+ /* main layout */
 
+main {
+  display: inline-block;
+  flex: 1 1;
+  background-color: rgb(14, 55, 82); 
+  width: auto;
+}
+   
 img {
-    position: relative;
-    width: 140px;
-    padding: 0px 5px 0px 5px;
-    float: inherit;
-    z-index: 2;
-    border-radius: 50%;
+  display: flex;
+  flex: 1 1 auto;
+  max-width: 30%;
+  max-height: 30%;
+  padding: 2em;
+  margin: auto;
 }
 
-div.lsites {
-    padding: 5px 0px 5px 2px;
-    margin: 65px 20px;
-    float: right;
+aside ul {
+  font-family: "Modern No. 20", Arial, Helvetica, sans-serif;
+  list-style-type: none;
+  font-size: 2em;
+  line-height: 2em;
+  flex: 1 1 auto;
+  text-align: center;
+  margin: auto;
+  padding: 1.25em;
 }
 
-h3.lsites {
-    font-family: 'Ledger', serif, system-ui;
-    color: darkseagreen;
-    font-weight: 500;
-    text-align: center;
-    font-size: 30px;
-    margin: 10px 0px 10px;
-    padding: 5px 40px 10px 0px;
+aside a{
+  color: rgb(198, 61, 61);
 }
 
-ul.lsites {
-    list-style-type: square;
-    color: darkblue;
-    font-size: 18px;
-    font-family: 'Artifika', serif, system-ui;
-    padding: 5px 5px 5px 5px;
-    margin: 15px 5px 5px 25px;
+aside a:hover{
+  position: relative;
+  bottom: 10px;
+  right: 10px;
+  color: white;
 }
 
-li {
-    margin: 0px 5px 5px 0px;
-    padding: 5px 0px 5px 5px;
-    position: relative;
+aside a:active{
+  color: crimson;
 }
 
-a {
-    font-family: 'Fresca', serif, system-ui;
-    text-decoration: none;
-    color: darkmagenta;
+aside a:after{
+  color: lime;
 }
 
-a:hover {
-    color: #fff;
-    left: 15px;
-    bottom: 10px;
-    position: relative;
+footer, footer p {
+  padding: 10px 5px 10px 5px;
+  background-color: #1a1f3a;
+  color:#9dd9ff;
+  display: flex;
+  flex: 1 2 auto;
 }
