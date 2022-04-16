@@ -46,6 +46,7 @@ p {
   padding: 10px 5px 10px 25px;
 }
   
+  
 h1 {
   font-size: 4rem;
   font-family: Artifika, Arial, Helvetica, sans-serif;
@@ -60,7 +61,12 @@ h2 {
   text-align: center;
 }
 
-
+h3 {
+  font-size: 2.4rem;
+  font-family: 'Cinzel Decorative', Arial, Helvetica, sans-serif;
+  margin: 2em 1em 1em 1em;
+}
+  
 
 /* navigation */
 
@@ -71,14 +77,14 @@ nav {
   width: 100%;
   align-items: center;
   align-content: space-around;
-  }
+}
 
 nav ul, nav li {
   list-style-type: none;
   flex: auto;
   display: flex;
   margin: auto;
-  padding: 0.75rem;  
+  padding: 0.75rem; 
   text-align: center;
   font-size: 1.9rem;
   line-height: 1.5;
@@ -130,29 +136,29 @@ aside ul {
   padding: 1.25em;
 }
 
-aside a{
-  color: rgb(198, 61, 61);
+p a{
+  color: rgb(85, 61, 219);
 }
 
-aside a:hover{
+p a:hover{
   position: relative;
   bottom: 10px;
-  right: 10px;
+  left: 10px;
   color: white;
 }
 
-aside a:active{
+p a:active{
   color: crimson;
 }
 
-aside a:after{
+p a:after{
   color: lime;
 }
 
 footer, footer p {
   padding: 10px 5px 10px 5px;
   background-color: #1a1f3a;
-  color:#9dd9ff;
+  color: #9dd9ff;
   display: flex;
   flex: 1 2 auto;
 }
