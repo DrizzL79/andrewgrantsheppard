@@ -25,7 +25,7 @@ html, body {
   
 html {
   display: flex;
-  flex: 1 1 auto;
+  flex: 1 1;
   font-size: 10px;
   background-color: #223246;
 }
@@ -39,14 +39,13 @@ body {
 
 p {
   font-family: Artifika, Arial, Helvetica, sans-serif;
-  display: flex;
-  flex: row wrap;
   color: #858585; 
   font-size: 1.9rem;
   line-height: 1.5;
   margin: auto;
+  padding: 10px 5px 10px 25px;
 }
- 
+
 div p{
   margin: 1em 3em 3em 1em;
 }
@@ -56,37 +55,33 @@ h1 {
   font-family: Artifika, Arial, Helvetica, sans-serif;
   text-align: center;
   color: #858585;
-  text-shadow: 7px 7px 22px  royalblue;
+  text-shadow: 7px 7px 22px royalblue;
 }
   
 h2 {
   font-size: 2.8rem;
   font-family: 'Cinzel Decorative', Arial, Helvetica, sans-serif;
   text-align: center;
-  text-shadow: 7px 7px 22px;
+  text-shadow: 1px 10px 7px rgb(255, 25, 175);
 }
-
-
-  
 
 /* navigation */
 
 nav {
   background-color: #1a1f3a;
   display: flex;
-  flex: 1 2 auto;
-  
+  flex: auto;
+  width: 100%;
   align-items: center;
   align-content: space-around;
-  margin: auto;
 }
 
 nav ul, nav li {
   list-style-type: none;
-  flex: 1 1 auto;
+  flex: auto;
   display: flex;
   margin: auto;
-  padding: 1em;  
+  padding: 0.75rem;  
   text-align: center;
   font-size: 1.9rem;
   line-height: 1.5;
@@ -98,16 +93,16 @@ nav a {
   text-transform: uppercase;
   text-decoration: none;
   color: #9dd9ff;
-  padding: 1px 1px 0 0;
   margin: 5px 2px 0 2px;
 }
   
 div nav {
   display: flex;
-  flex: 1 200px;
+  flex: 1 0;
   flex-flow: row wrap;
   background-color: #1a1f3a;
   justify-content: space-around;
+  margin: auto;
 }
   
  /* main layout */
@@ -120,11 +115,11 @@ main {
 }
    
 img {
-  display: flex;
+  display: grid;
   flex: 1 1 auto;
-  max-width: 30%;
-  max-height: 30%;
-  padding: 2em;
+  max-width: 25%;
+  max-height: 25%;
+  padding: 0 2rem 7rem 0;
   margin: auto;
 }
 
