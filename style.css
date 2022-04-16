@@ -59,7 +59,7 @@ h1 {
 }
   
 h2 {
-  font-size: 2.8rem;
+  font-size: 3rem;
   font-family: 'Cinzel Decorative', Arial, Helvetica, sans-serif;
   text-align: center;
   text-shadow: 1px 10px 7px rgb(255, 25, 175);
@@ -93,6 +93,7 @@ nav a {
   text-transform: uppercase;
   text-decoration: none;
   color: #9dd9ff;
+  padding: 1px 1px 0 0;
   margin: 5px 2px 0 2px;
 }
   
