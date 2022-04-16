@@ -59,9 +59,13 @@
     font-size: 3rem;
     font-family: 'Cinzel Decorative', Arial, Helvetica, sans-serif;
     text-align: center;
-  }
+}
   
-  
+h3 {
+    font-size: 2.4rem;
+    font-family: 'Cinzel Decorative', Arial, Helvetica, sans-serif;
+    margin: 2em 1em 1em 1em;
+}
     
   
   /* navigation */
@@ -69,18 +73,18 @@
   nav {
     background-color: #1a1f3a;
     display: flex;
-    flex: 1 2 auto;
+    flex: auto;
     width: 100%;
     align-items: center;
     align-content: space-around;
-}
+  }
   
   nav ul, nav li {
     list-style-type: none;
-    flex: 1 1 auto;
+    flex: auto;
     display: flex;
     margin: auto;
-    padding: 1em;  
+    padding: 0.75rem; 
     text-align: center;
     font-size: 1.9rem;
     line-height: 1.5;
@@ -132,22 +136,22 @@
     padding: 1.25em;
   }
   
-  aside a{
-    color: rgb(198, 61, 61);
+  p a{
+    color: rgb(85, 61, 219);
   }
   
-  aside a:hover{
+  p a:hover{
     position: relative;
     bottom: 10px;
-    right: 10px;
+    left: 10px;
     color: white;
   }
   
-  aside a:active{
+  p a:active{
     color: crimson;
   }
   
-  aside a:after{
+  p a:after{
     color: lime;
   }
   
