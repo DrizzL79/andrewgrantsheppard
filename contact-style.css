@@ -73,8 +73,7 @@
     width: 100%;
     align-items: center;
     align-content: space-around;
-    margin: auto;
-  }
+}
   
   nav ul, nav li {
     list-style-type: none;
