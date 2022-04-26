@@ -1,4 +1,4 @@
- /* fonts */
+ /* import fonts */
 
  @font-face {
   font-family: 'Artifika';
@@ -16,40 +16,8 @@
   src: url(https://fonts.gstatic.com/s/cinzeldecorative/v12/daaCSScvJGqLYhG8nNt8KPPswUAPni7TTMw.woff2) format('woff2');
 }
 
-/* basics */
+/* text styles*/
 
-html, body {
-  margin: auto;
-  padding: 1em;
-}
-  
-html {
-  display: flex;
-  flex: 1 1;
-  font-size: 10px;
-  background-color: #223246;
-}
-  
-body {
-  display: -ms-grid;
-  display: grid;
-  flex: 1 1;
-  max-width: 100%;
-}
-
-p {
-  font-family: Artifika, Arial, Helvetica, sans-serif;
-  color: #858585; 
-  font-size: 1.9rem;
-  line-height: 1.5;
-  margin: auto;
-  padding: 10px 5px 10px 25px;
-}
-
-div p{
-  margin: 1em 3em 3em 1em;
-}
-  
 h1 {
   font-size: 4rem;
   font-family: Artifika, Arial, Helvetica, sans-serif;
@@ -63,6 +31,21 @@ h2 {
   font-family: 'Cinzel Decorative', Arial, Helvetica, sans-serif;
   text-align: center;
   text-shadow: 1px 10px 7px rgb(255, 25, 175);
+}
+
+h3 {
+  font-size: 2.4rem;
+  font-family: 'Cinzel Decorative', Arial, Helvetica, sans-serif;
+  margin: 2em 1em 1em 1em;
+}
+
+p {
+  font-family: Artifika, Arial, Helvetica, sans-serif;
+  color: #858585; 
+  font-size: 1.9rem;
+  line-height: 1.5;
+  margin: auto;
+  padding: 10px 5px 10px 25px;
 }
 
 /* navigation */
@@ -93,18 +76,34 @@ nav a {
   text-transform: uppercase;
   text-decoration: none;
   color: #9dd9ff;
-  padding: 1px 1px 0 0;
-  margin: 5px 2px 0 2px;
+  padding: 1px;
+  margin: 5px 0 0 15px;
 }
   
-div nav {
+
+  
+/* general layout */
+
+html, body {
+  margin: auto;
+  padding: 0;
+}
+  
+html {
   display: flex;
-  flex: 1 0;
-  flex-flow: row wrap;
-  background-color: #1a1f3a;
-  justify-content: space-around;
+  flex: 1 1;
+  font-size: 10px;
+  background-color: #000000;
 }
   
+body {
+  display: -ms-grid;
+  display: grid;
+  flex: 1 1;
+  max-width: 100%;
+  height: 100%;
+}
+
  /* main layout */
 
 main {
@@ -114,7 +113,8 @@ main {
   width: auto;
 }
    
-img {
+img.index {
+  display: -ms-grid;
   display: grid;
   flex: 1 1 auto;
   max-width: 25%;
@@ -123,12 +123,66 @@ img {
   margin: auto;
 }
 
+img.learn {
+  display: inline-block;
+  border-color:rgb(110, 110, 110);
+  border-radius: 2ex;
+  box-shadow:  1px 1px 15px 1px rgb(112, 104, 122);
+  max-width: 20%;
+  padding: 1em;
+  margin: 1em;
+}
+
+video, .span > p{
+  text-align: left;
+  font-family: 'Cinzel Decorative', Arial, Helvetica, sans-serif;
+  font-size: 2em;
+  font-weight: 600;
+  text-shadow: 3px 3px 3px #000000;
+  color: #7b3f7e;
+  padding: 1em 0 0 0;
+  margin: 0 0 0 1em;
+}
+
+.btnp {
+  font-family: 'Franklin Gothic Medium', Arial, Helvetica, sans-serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 24px;
+  border: 2px solid rgb(255, 255, 255);
+  background: rgb(61, 140, 183);
+  color: rgb(8, 16, 1);
+  box-shadow: 1px 1px 2px rgba(0,0,200,0.4);
+  border-radius: 10px;
+  padding: 5px 10px;
+  margin: 20px 0 0 37px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+#btn{
+  font-size: 1.4em;
+  padding: 0 2em 2em 1em;
+}
+
+article p {
+  color: #858585;
+  font-family: Artifika, Arial, Helvetica, sans-serif;
+  font-size: 1.9rem;
+  line-height: 1.5;
+  margin: auto;
+  padding: 10px 5px 10px 25px;
+}
+  
+/* aside, links, and footer */
+
 aside ul {
   font-family: "Modern No. 20", Arial, Helvetica, sans-serif;
   list-style-type: none;
   font-size: 2em;
   line-height: 2em;
-  flex: 1 1 auto;
+  
   text-align: center;
   margin: auto;
   padding: 1.25em;
@@ -146,17 +200,36 @@ aside a:hover{
 }
 
 aside a:active{
-  color: crimson;
+  color: rgb(221, 218, 19);
 }
 
 aside a:after{
   color: lime;
 }
 
+p a{
+  color: rgb(198, 61, 61);
+}
+
+p a:hover{
+  position: relative;
+  bottom: 10px;
+  left: 10px;
+  color: white;
+}
+
+p a:active{
+  color: rgb(221, 218, 19);
+}
+
+p a:after{
+  color: lime;
+}
+
 footer, footer p {
   padding: 10px 5px 10px 5px;
   background-color: #1a1f3a;
-  color:#9dd9ff;
+  color: #9dd9ff;
   display: flex;
   flex: 1 2 auto;
 }
