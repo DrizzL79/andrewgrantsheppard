@@ -36,17 +36,22 @@ h2 {
 h3 {
   font-size: 2.4rem;
   font-family: 'Cinzel Decorative', Arial, Helvetica, sans-serif;
-  margin: 2em 1em 1em 1em;
+  margin: 50px 20px 50px 50px;
+  color:#7d81ff ;
 }
 
 p {
   font-family: Artifika, Arial, Helvetica, sans-serif;
-  color: #858585; 
+  color: #94c6c3; 
   font-size: 1.9rem;
   line-height: 1.5;
-  margin: auto;
-  padding: 10px 5px 10px 25px;
+  margin: 20px 20px 10px 50px;
+  padding: 5px;
+  
 }
+
+
+
 
 /* navigation */
 
@@ -71,12 +76,13 @@ nav ul, nav li {
 }
 
 nav a {
-  display: block;
+  display: flex;
+  flex: auto;
   font-size: 1.2em;
   text-transform: uppercase;
   text-decoration: none;
   color: #9dd9ff;
-  padding: 1px;
+  padding: 12px;
   margin: 5px 0 0 15px;
 }
   
@@ -91,39 +97,36 @@ html, body {
   
 html {
   display: flex;
-  flex: 1 1;
+  flex: auto;
   font-size: 10px;
   background-color: #000000;
 }
   
 body {
-  display: -ms-grid;
-  display: grid;
-  flex: 1 1;
-  max-width: 100%;
-  height: 100%;
+  display: flexbox;
+  flex: auto;
+  max-width: 1200px;
 }
 
  /* main layout */
 
 main {
-  display: inline-block;
-  flex: 1 1;
+  display: flexbox;
+  flex: auto; 
+  flex-direction:column;
   background-color: rgb(14, 55, 82); 
   width: auto;
 }
    
-img.index {
-  display: -ms-grid;
-  display: grid;
-  flex: 1 1 auto;
-  max-width: 25%;
-  max-height: 25%;
+.index {
+  display: block;
+  max-width: 35%;
+  min-width: 25%;
   padding: 0 2rem 7rem 0;
   margin: auto;
 }
 
-img.learn {
+.learn {
   display: inline-block;
   border-color:rgb(110, 110, 110);
   border-radius: 2ex;
@@ -145,34 +148,51 @@ video, .span > p{
 }
 
 .btnp {
-  font-family: 'Franklin Gothic Medium', Arial, Helvetica, sans-serif;
+  font-family: "Book Antiqua", Arial, Helvetica, sans-serif;
   letter-spacing: 1px;
-  text-transform: uppercase;
   text-align: center;
-  font-size: 24px;
-  border: 2px solid rgb(255, 255, 255);
-  background: rgb(61, 140, 183);
-  color: rgb(8, 16, 1);
-  box-shadow: 1px 1px 2px rgba(0,0,200,0.4);
-  border-radius: 10px;
-  padding: 5px 10px;
-  margin: 20px 0 0 37px;
-  display: inline-block;
+  font-size: 18px;
+  background: rgb(125, 0, 255);
+  color: rgb(255, 255, 255);
+  box-shadow: 0 0 10px 10px rgba(220,20,210,0.4);
+  border-radius: 50px;
+  padding: 10px;
+  margin: 50px auto;
+  display: block;
+  width: auto;
   cursor: pointer;
 }
 
-#btn{
-  font-size: 1.4em;
-  padding: 0 2em 2em 1em;
+section, section div, section p, #btun {
+  text-align: center;
+  max-width: 500px;
+  min-width: 450px;
+  color: black;
+  margin: auto;
+  padding: 10px;
+  background-color: #7b3f7e;
+  background-image: linear-gradient(90deg, rgba(10,55,255,0.5), rgba(25,255,255,0.3), rgba(255,255,255,0));
 }
 
-article p {
+
+.lastResult {
+  color: rgb(255, 255, 255);
+  padding: 0;
+  margin: auto;
+  width: 10px;
+  text-align: center;
+  display: inline-block;
+}
+
+
+article p{
   color: #858585;
   font-family: Artifika, Arial, Helvetica, sans-serif;
   font-size: 1.9rem;
   line-height: 1.5;
+  width: 500px;
   margin: auto;
-  padding: 10px 5px 10px 25px;
+  padding: 10px 5px 50px 25px;
 }
   
 /* aside, links, and footer */
@@ -182,7 +202,6 @@ aside ul {
   list-style-type: none;
   font-size: 2em;
   line-height: 2em;
-  
   text-align: center;
   margin: auto;
   padding: 1.25em;
@@ -226,10 +245,28 @@ p a:after{
   color: lime;
 }
 
+div.container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 350px 350px 350px;
+  grid-template-columns: 350px 350px 350px;
+  margin:0;
+}
+.contact {
+  color: rgb(220, 120, 220);
+}
+
+.contact-message {
+  width: auto;
+  color:#ffffff;
+}
+
 footer, footer p {
-  padding: 10px 5px 10px 5px;
+  padding: auto;
+  padding-bottom: 12px;
+  text-align: center;
   background-color: #1a1f3a;
   color: #9dd9ff;
   display: flex;
-  flex: 1 2 auto;
+  flex: auto;
 }
