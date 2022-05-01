@@ -8,6 +8,7 @@
     <title>Andrew Grant Sheppard: Developing Developer</title>
     <link rel="stylesheet" href="style.css">
     <script src="projects.js" defer></script>
+    <script src="guessNumberGame.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com/">
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
     <link href="https://fonts.googleapis.com/css2?family=Artifika&amp;family=Cinzel+Decorative&amp;family=Fresca&amp;family=Ledger&amp;display=swap" crossorigin="use-credentials">
@@ -31,16 +32,40 @@
     </nav>
 
     <main>
-    
-      <p>Click below for the current date and time.</p>
-      <span class="btnp">Click Here</span>
+      <br><br>
+      <div>
+        <button type="button" class="btnp">Click Here for Date and Time</button>
+      </div>
       
-      <pre><p id="btn">                  Day           Date    Month        Year        h:   m:     s:      ms</p></pre>
+      <br><br>
+
+      <section>
+
+        <h2>Number guessing game</h2>
+        <p>Guess a number between 1 and 100. You have 10 attempts. For each attempt, you will be told if your guess was correct, or too high or too low.</p>
+
+        <div class="form">
+          <label for="guessField"><p>Guess a number:</p></label>
+          <input type="text" id="guessField" class="guessField">
+          <input type="submit" value="Submit guess" class="guessSubmit">
+        </div>
         
+        <br><br>
+
+        <div class="resultParas">
+          <p class="guesses"></p>
+          <p class="lastResult"></p>
+          <p class="lowOrHi"></p>
+          <p class="correctAnswer"></p>
+        </div>
+
+        <div id="btun"></div>
+      </section>
+      <br><br>
     </main>
     
     <footer>
-      <p>&copy;Copyright 2022 Andrew Grant Sheppard. All rights reserved.</p>
+      <p>&copy;2022 Andrew Grant Sheppard. All rights reserved.</p>
     </footer>
   </body>
 </html>
