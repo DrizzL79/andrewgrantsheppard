@@ -124,11 +124,11 @@ main {
 .learn {
   display: inline-block;
   border-color:rgb(110, 110, 110);
-  border-radius: 2ex;
+  border-radius: 12px;
   box-shadow:  1px 1px 15px 1px rgb(112, 104, 122);
-  max-width: 20%;
-  padding: 1em;
-  margin: 1em;
+  max-width: 18%;
+  padding: 5px;
+  margin: 12px;
 }
 
 .span, video, .span p{
