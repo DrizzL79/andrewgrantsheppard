@@ -19,39 +19,35 @@
 /* text styles*/
 
 h1 {
-  font-size: 4rem;
+  font-size: 8vmin;
   font-family: Artifika, Arial, Helvetica, sans-serif;
   text-align: center;
   color: #858585;
-  text-shadow: 7px 7px 22px royalblue;
+  text-shadow: 2vw 3vw 5vw royalblue;
 }
   
 h2 {
-  font-size: 3rem;
+  font-size: 6vmin;
   font-family: 'Cinzel Decorative', Arial, Helvetica, sans-serif;
   text-align: center;
-  text-shadow: 1px 10px 7px rgb(255, 25, 175);
+  text-shadow: 1vh 2vh 2vw rgb(255, 25, 175);
 }
 
 h3 {
-  font-size: 2.4rem;
+  font-size: 4vh;
   font-family: 'Cinzel Decorative', Arial, Helvetica, sans-serif;
-  margin: 50px 20px 50px 50px;
+  margin: 7vmin 5vmin;
   color:#7d81ff ;
 }
 
 p {
   font-family: Artifika, Arial, Helvetica, sans-serif;
   color: #94c6c3; 
-  font-size: 1.9rem;
-  line-height: 1.5;
-  margin: 20px 20px 10px 50px;
-  padding: 5px;
-  
+  font-size: 4vmin;
+  line-height: 5vh;
+  margin: 2vmin 5vmin ;
+  padding: 1vmin;
 }
-
-
-
 
 /* navigation */
 
@@ -59,9 +55,8 @@ nav {
   background-color: #1a1f3a;
   display: flex;
   flex: auto;
-  width: 100%;
-  align-items: center;
-  align-content: space-around;
+  width: auto;
+  margin: auto;
 }
 
 nav ul, nav li {
@@ -69,24 +64,22 @@ nav ul, nav li {
   flex: auto;
   display: flex;
   margin: auto;
-  padding: 0.75rem;  
+  padding: .75vmin 1vmin;  
   text-align: center;
-  font-size: 1.9rem;
-  line-height: 1.5;
+  font-size: 3vmin;
 }
 
 nav a {
   display: flex;
+  font-family: Artifika, Arial, Helvetica, sans-serif;
   flex: auto;
-  font-size: 1.2em;
+  font-size: 3vmin;
   text-transform: uppercase;
   text-decoration: none;
   color: #9dd9ff;
-  padding: 12px;
-  margin: 5px 0 0 15px;
+  padding: 0;
+  margin: 1.5vmin;
 }
-  
-
   
 /* general layout */
 
@@ -98,14 +91,16 @@ html, body {
 html {
   display: flex;
   flex: auto;
-  font-size: 10px;
+  font-size: 3vmin;
   background-color: #000000;
+  width: auto;
 }
   
 body {
   display: flexbox;
   flex: auto;
   max-width: 1200px;
+  height: auto;
 }
 
  /* main layout */
@@ -136,22 +131,23 @@ main {
   margin: 1em;
 }
 
-video, .span > p{
+video, .span, .span p{
   text-align: left;
   font-family: 'Cinzel Decorative', Arial, Helvetica, sans-serif;
-  font-size: 2em;
+  font-size: 3vw;
   font-weight: 600;
   text-shadow: 3px 3px 3px #000000;
   color: #7b3f7e;
-  padding: 1em 0 0 0;
-  margin: 0 0 0 1em;
+  padding: 3vh;
+  max-width: 85vw;
+  margin: auto;
 }
 
 .btnp {
   font-family: "Book Antiqua", Arial, Helvetica, sans-serif;
   letter-spacing: 1px;
   text-align: center;
-  font-size: 18px;
+  font-size: 3vmax;
   background: rgb(125, 0, 255);
   color: rgb(255, 255, 255);
   box-shadow: 0 0 10px 10px rgba(220,20,210,0.4);
@@ -165,8 +161,8 @@ video, .span > p{
 
 section, section div, section p, #btun {
   text-align: center;
-  max-width: 500px;
-  min-width: 450px;
+  max-width: 80vmin;
+  min-width: 50vmin;
   color: black;
   margin: auto;
   padding: 10px;
@@ -188,9 +184,8 @@ section, section div, section p, #btun {
 article p{
   color: #858585;
   font-family: Artifika, Arial, Helvetica, sans-serif;
-  font-size: 1.9rem;
-  line-height: 1.5;
-  width: 500px;
+  font-size: 3.5vh;
+  max-width: 80vmin;
   margin: auto;
   padding: 10px 5px 50px 25px;
 }
@@ -200,11 +195,12 @@ article p{
 aside ul {
   font-family: "Modern No. 20", Arial, Helvetica, sans-serif;
   list-style-type: none;
-  font-size: 2em;
-  line-height: 2em;
+  font-size: 3.5vh;
+  line-height: 7vh;
   text-align: center;
   margin: auto;
-  padding: 1.25em;
+  padding: 2vh;
+  
 }
 
 aside a{
@@ -228,6 +224,7 @@ aside a:after{
 
 p a{
   color: rgb(198, 61, 61);
+  font-size: 3.5vmin;
 }
 
 p a:hover{
@@ -248,23 +245,26 @@ p a:after{
 div.container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 350px 350px 350px;
-  grid-template-columns: 350px 350px 350px;
+  -ms-grid-columns: 30vw 30vw 30vw;
+  grid-template-columns: 30vw 30vw 30vw;
   margin:0;
 }
 .contact {
   color: rgb(220, 120, 220);
+  font-size: 3vmax;
 }
 
 .contact-message {
   width: auto;
   color:#ffffff;
+  font-size: 3.5vmin;
 }
 
-footer, footer p {
-  padding: auto;
-  padding-bottom: 12px;
+footer, footer p {  
+  font-size: 2vmax;
+  padding: 1vh;
   text-align: center;
+  margin: auto;
   background-color: #1a1f3a;
   color: #9dd9ff;
   display: flex;
