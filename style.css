@@ -16,7 +16,7 @@
   src: url(https://fonts.gstatic.com/s/cinzeldecorative/v12/daaCSScvJGqLYhG8nNt8KPPswUAPni7TTMw.woff2) format('woff2');
 }
 
-/* text styles*/
+/* universal text styles */
 
 h1 {
   font-size: 8vmin;
@@ -49,7 +49,7 @@ p {
   padding: 12px;
 }
 
-/* navigation */
+/* universal navigation menu */
 
 nav {
   background-color: #1a1f3a;
@@ -81,7 +81,7 @@ nav a {
   margin: 1.5vmin;
 }
   
-/* general layout */
+/* univeral layout style: html, body, main, footer */
 
 html, body {
   margin: auto;
@@ -103,8 +103,6 @@ body {
   height: auto;
 }
 
- /* main layout */
-
 main {
   display: flexbox;
   flex: auto; 
@@ -112,7 +110,20 @@ main {
   background-color: rgb(14, 55, 82); 
   width: auto;
 }
-   
+
+footer, footer p {  
+  font-size: 2vmin;
+  padding: 5px;
+  text-align: center;
+  margin: auto;
+  background-color: #1a1f3a;
+  color: #9dd9ff;
+  display: block;
+}
+
+ /* index.html style */
+
+/* index: image */   
 .index {
   display: block;
   max-width: 35%;
@@ -120,6 +131,49 @@ main {
   padding: 0 2rem 7rem 0;
   margin: auto;
 }
+
+/* index: article paragraph, aside links */
+
+article p {
+  color: #858585;
+  text-align: justify;
+  font-family: Artifika, Arial, Helvetica, sans-serif;
+  font-size: 3.5vmin;
+  max-width: 80vmin;
+  margin: auto;
+  padding: 10px 5px 50px 25px;
+}
+
+aside ul {
+  font-family: "Modern No. 20", Arial, Helvetica, sans-serif;
+  list-style-type: none;
+  font-size: 3.5vmin;
+  line-height: 5vmin;
+  text-align: center;
+  margin: auto;
+  padding: 25px; 
+}
+
+aside a{
+  color: rgb(198, 61, 61);
+}
+
+aside a:hover{
+  position: relative;
+  bottom: 10px;
+  right: 10px;
+  color: white;
+}
+
+aside a:active{
+  color: rgb(221, 218, 19);
+}
+
+aside a:after{
+  color: lime;
+}
+
+/* learning-progress.html style: images */
 
 .learn {
   display: inline-block;
@@ -130,6 +184,8 @@ main {
   padding: 5px;
   margin: 12px;
 }
+
+/* media.html style: video */
 
 .span, video, .span p{
   text-align: center;
@@ -143,6 +199,8 @@ main {
   margin: 0 5px 0;
   display: block;
 }
+
+/* projects.html style: JavaScript selectors */
 
 .btnp {
   font-family: "Book Antiqua", Arial, Helvetica, sans-serif;
@@ -171,7 +229,6 @@ section, section div, section p, #btun {
   background-image: linear-gradient(90deg, rgba(10,55,255,0.5), rgba(25,255,255,0.3), rgba(255,255,255,0));
 }
 
-
 .lastResult {
   color: rgb(255, 255, 255);
   padding: 0;
@@ -181,47 +238,7 @@ section, section div, section p, #btun {
   display: inline-block;
 }
 
-article p{
-  color: #858585;
-  text-align: justify;
-  font-family: Artifika, Arial, Helvetica, sans-serif;
-  font-size: 3.5vmin;
-  max-width: 80vmin;
-  margin: auto;
-  padding: 10px 5px 50px 25px;
-}
-  
-/* aside, links, and footer */
-
-aside ul {
-  font-family: "Modern No. 20", Arial, Helvetica, sans-serif;
-  list-style-type: none;
-  font-size: 3.5vmin;
-  line-height: 5vmin;
-  text-align: center;
-  margin: auto;
-  padding: 25px;
-  
-}
-
-aside a{
-  color: rgb(198, 61, 61);
-}
-
-aside a:hover{
-  position: relative;
-  bottom: 10px;
-  right: 10px;
-  color: white;
-}
-
-aside a:active{
-  color: rgb(221, 218, 19);
-}
-
-aside a:after{
-  color: lime;
-}
+/* contact.html style */
 
 p a{
   color: rgb(198, 61, 61);
@@ -265,14 +282,4 @@ div.container p a{
   width: auto;
   color:#ffffff;
   font-size: 3vmin;
-}
-
-footer, footer p {  
-  font-size: 2vmin;
-  padding: 5px;
-  text-align: center;
-  margin: auto;
-  background-color: #1a1f3a;
-  color: #9dd9ff;
-  display: block;
 }
