@@ -97,7 +97,7 @@ html {
 }
   
 body {
-  display: flexbox;
+  display: block;
   flex: auto;
   max-width: 1200px;
   height: auto;
