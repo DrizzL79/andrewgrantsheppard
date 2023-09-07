@@ -218,12 +218,30 @@ aside a:after{
   cursor: pointer;
 }
 
+section.container {
+  margin-left: 50px;
+}
+
+#date {
+  font-family: "Book Antiqua", Arial, Helvetica, sans-serif;
+  font-size: 3vmin;
+  color: rgb(255, 255, 255);
+  background: black;
+  box-shadow: 0 0 5px 5px rgba(215, 184, 214, 0.941);
+  border-radius: 50px;
+  text-align: center;
+  margin: auto;
+  padding: 5px;
+  display: block;
+  width: 350px;
+}
+
 section, section div, section p, #btun {
   text-align: center;
   max-width: 80vmin;
   min-width: 50vmin;
   color: black;
-  margin: auto;
+  margin: 0;
   padding: 10px;
   background-color: #7b3f7e;
   background-image: linear-gradient(90deg, rgba(10,55,255,0.5), rgba(25,255,255,0.3), rgba(255,255,255,0));

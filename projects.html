@@ -13,9 +13,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
     <link href="https://fonts.googleapis.com/css2?family=Artifika&amp;family=Cinzel+Decorative&amp;family=Fresca&amp;family=Ledger&amp;display=swap" crossorigin="use-credentials">
   </head>
-
+ 
   <body>
-
     <header>
       <h1>Andrew Grant Sheppard's Online CV</h1>
     </header>
@@ -28,7 +27,6 @@
         <li><a href="media.html">Media</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
-
     </nav>
 
     <main>
@@ -36,11 +34,11 @@
       <div>
         <button type="button" class="btnp">Click Here for Date and Time</button>
       </div>
+      <div></div>
       
       <br><br>
 
-      <section>
-
+      <section class="container">
         <h2>Number guessing game</h2>
         <p>Guess a number between 1 and 100. You have 10 attempts. For each attempt, you will be told if your guess was correct, or too high or too low.</p>
 
@@ -58,12 +56,26 @@
           <p class="lowOrHi"></p>
           <p class="correctAnswer"></p>
         </div>
-
         <div id="btun"></div>
       </section>
+
       <br><br>
+      <br><br>
+      
+      <section class="container">
+        <div>
+          <h2>Wikipedia Viewer</h2>
+          <p>Search for a Wikipedia article or click the button to see a random article.</p>
+          <div>
+            <label for="searchField"><p>Search for an article:</p></label>
+            <input type="text" id="searchField" class="searchField">
+            <input type="submit" value="Search" class="searchSubmit">
+          </div>
+          <br><br>
+          <div id="wikiMedia"></div>
+        </div>
+      </section>
     </main>
-    
     <footer>
       <p>&copy;2022 Andrew Grant Sheppard. All rights reserved.</p>
     </footer>
